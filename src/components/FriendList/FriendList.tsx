@@ -1,5 +1,5 @@
 import React from "react";
-import FriendListItem from "./FriendsListItem.tsx";
+import FriendListItem from "../FriendsListItem/FriendsListItem.tsx";
 
 interface Friend {
     avatar: string;
