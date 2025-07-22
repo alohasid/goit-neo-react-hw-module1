@@ -1,12 +1,6 @@
 import React from "react";
 
-interface FriendListItemProps {
-    avatar: string;
-    name: string;
-    isOnline: boolean;
-}
-
-const FriendListItem: React.FC<FriendListItemProps> = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
     const statusClass = isOnline ? "online" : "offline";
 
     return (

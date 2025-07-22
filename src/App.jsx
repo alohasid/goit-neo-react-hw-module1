@@ -1,12 +1,12 @@
 import React from "react";
-import Profile from "./components/Profile/Profile.tsx";
-import FriendList from "./components/FriendList/FriendList.tsx";
-import TransactionHistory from "./components/TransactionHistory/TransactionHistory.tsx";
 import userData from "./userData.json";
 import friends from "./friends.json";
 import transactions from "./transactions.json";
+import Profile from "./components/Profile/Profile.jsx";
+import FriendList from "./components/FriendList/FriendList.jsx";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory.jsx";
 
-const App: React.FC = () => {
+const App = () => {
     return (
         <>
             <Profile

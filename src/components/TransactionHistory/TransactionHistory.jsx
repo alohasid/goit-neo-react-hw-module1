@@ -1,17 +1,6 @@
 import React from "react";
 
-interface Transaction {
-    id: string;
-    type: string;
-    amount: string;
-    currency: string;
-}
-
-interface TransactionHistoryProps {
-    items: Transaction[];
-}
-
-const TransactionHistory: React.FC<TransactionHistoryProps> = ({ items }) => {
+const TransactionHistory = ({ items }) => {
     return (
         <table className="transaction-history">
             <thead>

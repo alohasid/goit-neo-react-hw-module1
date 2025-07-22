@@ -1,18 +1,7 @@
 import React from "react";
-import FriendListItem from "../FriendsListItem/FriendsListItem.tsx";
+import FriendListItem from "../FriendsListItem/FriendsListItem.jsx";
 
-interface Friend {
-    avatar: string;
-    name: string;
-    isOnline: boolean;
-    id: number;
-}
-
-interface FriendListProps {
-    friends: Friend[];
-}
-
-const FriendList: React.FC<FriendListProps> = ({ friends }) => {
+const FriendList = ({ friends }) => {
     return (
         <ul className="friend-list">
             {friends.map(({ avatar, name, isOnline, id }) => (

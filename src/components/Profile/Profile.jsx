@@ -1,20 +1,6 @@
 import React from "react";
 
-interface Stats {
-    followers: number;
-    views: number;
-    likes: number;
-}
-
-interface ProfileProps {
-    name: string;
-    tag: string;
-    location: string;
-    image: string;
-    stats: Stats;
-}
-
-const Profile: React.FC<ProfileProps> = ({ name, tag, location, image, stats }) => {
+const Profile = ({ name, tag, location, image, stats }) => {
     return (
         <div className="profile">
             <div>
